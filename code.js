@@ -7,8 +7,9 @@
 
   Return the number 5 from this function.
 */
+console.log(getNumberFive())
 function getNumberFive() {
-  // Your code here
+  return 5
 }
 
 /* 
@@ -26,8 +27,9 @@ console.log(getNumberFive() === 5);
 
   Multiply these two numbers and return the result.
 */
+console.log(multiply(6,2))
 function multiply(a, b) {
-  // You code here
+    return a * b
 }
 
 /* 
@@ -49,8 +51,11 @@ console.log(multiply(0, 0) === 0);
 
   Add the text to the end of the message, and then return the complete string.
 */
+
 function concatenate(message, text) {
-  // You code here
+  message = "is this correct";
+  text = "I'm not sure if";
+  return text + " " + message;
 }
 
 /* 
