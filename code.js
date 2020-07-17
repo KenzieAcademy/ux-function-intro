@@ -75,9 +75,11 @@ console.log(concatenate("", "New text!") === "New text!");
 */
 function absoluteValue(number) {
   if (number > 0) {
-    return 5;
-  }
-  else { }
+    result = number;
+  } else {
+    result = number * -1;
+}
+  return result;
 }
 
 /* 
@@ -108,18 +110,25 @@ console.log(absoluteValue(0) === 0);
   (Look at the lesson on Operators)
 */
 function evenOddOrZero(number) {
-  if (number )
-  // You code here
+  let result
+  if (number == 0) {
+    result = "Zero";
+  } else if (number % 2 === 0) {
+    result = "Even";
+  } else {
+    result = "Odd";
+  }
+  return result
 }
-
+// console.log(evenOddOrZero(6));
 /* 
   -------TESTS---------------------------------------------------------------
   Run these commands to make sure you did it right. They should all be true.
 */
-console.log("-----Tests for Exercise Four-----");
+console.log("-----Tests for Exercise Five-----");
 console.log("* Check for Even");
 console.log(evenOddOrZero(6) === "Even");
 console.log("* Check for Odd");
-console.log(absoluteValue(13) === "Odd");
+console.log(evenOddOrZero(13) === "Odd");
 console.log("* Check for Zero");
-console.log(absoluteValue(0) === "Zero");
+console.log(evenOddOrZero(0) === "Zero");
