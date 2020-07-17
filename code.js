@@ -51,11 +51,8 @@ console.log(multiply(0, 0) === 0);
 
   Add the text to the end of the message, and then return the complete string.
 */
-
 function concatenate(message, text) {
-  message = "is this correct";
-  text = "I'm not sure if";
-  return text + " " + message;
+  return message + text;
 }
 
 /* 
@@ -79,6 +76,11 @@ console.log(concatenate("", "New text!") === "New text!");
 */
 function absoluteValue(number) {
   // You code here
+  if (number > 0) {
+    return number; 
+  } else {
+    return number * -1
+  }
 }
 
 /* 
@@ -110,6 +112,15 @@ console.log(absoluteValue(0) === 0);
 */
 function evenOddOrZero(number) {
   // You code here
+  let result;
+  if (number === 0) {
+    result = "Zero";
+  } else if (number % 2 === 0) {
+    result = "Even";
+  } else {
+    result - "Odd";
+  }
+  return result;
 }
 
 /* 
