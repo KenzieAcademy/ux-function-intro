@@ -118,9 +118,9 @@ function evenOddOrZero(number) {
   } else if (number % 2 === 0) {
     result = "Even";
   } else {
-    result - "Odd";
+    result = "Odd";
   }
-  return result;
+  return result
 }
 
 /* 
