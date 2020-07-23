@@ -120,7 +120,8 @@ function evenOddOrZero(number) {
   }
   return result;
 }
-
+//
+//
 /* 
   -------TESTS---------------------------------------------------------------
   Run these commands to make sure you did it right. They should all be true.
