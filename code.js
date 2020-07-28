@@ -9,6 +9,7 @@
 */
 function getNumberFive() {
   // Your code here
+  return 5 
 }
 
 /* 
@@ -28,8 +29,11 @@ console.log(getNumberFive() === 5);
 */
 function multiply(a, b) {
   // You code here
+  return a * b
 }
 
+
+ 
 /* 
   -------TESTS---------------------------------------------------------------
   Run these commands to make sure you did it right. They should all be true.
@@ -51,6 +55,7 @@ console.log(multiply(0, 0) === 0);
 */
 function concatenate(message, text) {
   // You code here
+  return message + text 
 }
 
 /* 
@@ -74,7 +79,13 @@ console.log(concatenate("", "New text!") === "New text!");
 */
 function absoluteValue(number) {
   // You code here
-}
+  if (number > 0) {
+    return number
+  }else {
+      (number * -1) 
+    return number
+  }
+}   
 
 /* 
   -------TESTS---------------------------------------------------------------
@@ -105,6 +116,14 @@ console.log(absoluteValue(0) === 0);
 */
 function evenOddOrZero(number) {
   // You code here
+  if (number % 2 == 0) {
+      return "Even"
+} else if (number % 2 == 1){
+      return "Odd"
+}else if (number == 0){
+      return "ZeroZero"
+  }
+
 }
 
 /* 
